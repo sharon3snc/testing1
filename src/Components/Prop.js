@@ -1,10 +1,10 @@
 
 const Props = (props) => (
-    <props value={props.value} onChange={(e)=>props.onChange(e.target.value)}>
+    <select value={props.value} onChange={props.onChange}>
       {props.items.map(val => (
         <option value={val}>{val}</option>
       ))}
-    </props>
+    </select>
   );
 
   export default Props;
